@@ -41,7 +41,7 @@ export function SiteFooter() {
             </a>
             <a href="#" aria-label="Instagram" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground transition"><Instagram className="w-4 h-4" /></a>
             <a href="#" aria-label="Facebook" className="p-2 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground transition"><Facebook className="w-4 h-4" /></a>
-          </ul>
+          </div>
         </div>
       </div>
       <div className="border-t border-primary-foreground/15">
