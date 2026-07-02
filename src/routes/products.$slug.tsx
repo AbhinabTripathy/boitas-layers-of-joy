@@ -9,7 +9,7 @@ export const Route = createFileRoute("/products/$slug")({
   loader: ({ params }) => {
     const product = getProduct(params.slug);
     if (!product) throw notFound();
-    return { product };
+    return { product } as const;
   },
   head: ({ loaderData }) => {
     const p = loaderData?.product;
