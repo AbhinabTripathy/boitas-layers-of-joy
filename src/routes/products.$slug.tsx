@@ -84,7 +84,7 @@ function ProductDetail() {
               <div className="mt-8">
                 <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Weight</p>
                 <div className="flex gap-2 flex-wrap">
-                  {product.weights.map((w, i) => (
+                  {product.weights.map((w: { label: string; price: number }, i: number) => (
                     <button
                       key={w.label}
                       onClick={() => setWeightIdx(i)}
