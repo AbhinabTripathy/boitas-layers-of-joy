@@ -2,7 +2,7 @@ import arisa from "@/assets/Arisa.png.asset.json";
 import chuda from "@/assets/Chuda_Mixture.png.asset.json";
 import badi from "@/assets/Fried_Badi.png.asset.json";
 import khajaMasala from "@/assets/Khaja_Masala.png.asset.json";
-import khajaSalted from "@/assets/Khaja_Salted.png.asset.json";
+import nimki from "@/assets/Nimki.png.asset.json";
 import moa from "@/assets/Moa_Bites.png.asset.json";
 
 export type WeightOption = { label: string; price: number };
@@ -81,22 +81,22 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "khaja-salted",
-    name: "Khaja Salted Crunch",
-    tagline: "Layers of joy in every bite",
+    slug: "nimki",
+    name: "Nimki",
+    tagline: "Crisp. Salty. Unapologetically addictive.",
     category: "Savouries",
-    image: khajaSalted.url,
-    shortDescription: "Classic layered khaja with a delicate salted finish.",
+    image: nimki.url,
+    shortDescription: "Diamond-shaped savoury crackers, spiced with cumin and finished with rock salt.",
     description:
-      "The purest expression of the temple khaja — thirty-two paper-thin layers, kissed with rock salt and black sesame. Best paired with an evening cup of tea.",
-    ingredients: "Refined flour, refined oil, rock salt, black sesame.",
+      "Our Nimki is the quintessential Odia tea-time companion — crisp, diamond-shaped crackers kneaded with cumin and carom seeds, then fried to a delicate golden finish and dusted with rock salt. Simple, honest and impossible to stop at one.",
+    ingredients: "Refined flour, cumin seeds, carom seeds (ajwain), rock salt, refined oil.",
     shelfLife: "45 days from date of packaging.",
     storage: "Store in an airtight container in a cool, dry place.",
     story:
-      "For the ones who love the crunch without the fire — a savoury heirloom that has travelled from the Puri Jagannath kitchens to living rooms across India.",
+      "In every Odia household, the evening tea is incomplete without a bowl of nimki. Mothers would roll and cut diamond shapes by hand while the oil warmed on the stove — a ritual we preserve in every batch.",
     weights: [
-      { label: "150g", price: 170 },
-      { label: "300g", price: 320 },
+      { label: "150g", price: 160 },
+      { label: "300g", price: 300 },
     ],
   },
   {
