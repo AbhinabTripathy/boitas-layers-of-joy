@@ -5,21 +5,20 @@ import { products, WHATSAPP_NUMBER } from "@/lib/products";
 import { ProductCard } from "@/components/product-card";
 import { WA_URL } from "@/lib/cart";
 import heroImg from "@/assets/Khaja_Masala.png.asset.json";
-import arisaImg from "@/assets/Arisa.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Boitas — Authentic Odia Delicacies, Crafted with Tradition" },
       { property: "og:title", content: "Boitas — Authentic Odia Delicacies" },
-      { property: "og:image", content: arisaImg.url },
-      { property: "twitter:image", content: arisaImg.url },
+      { property: "og:image", content: heroImg.url },
+      { property: "twitter:image", content: heroImg.url },
     ],
   }),
   component: HomePage,
 });
 
-const featured = products.slice(0, 6);
+const featured = products;
 
 const whyItems = [
   { icon: ChefHat, title: "Authentic Recipes", desc: "Rooted in the temple kitchens of Odisha and passed down by generations." },
