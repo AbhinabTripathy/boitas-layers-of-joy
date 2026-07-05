@@ -1,10 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
-import arisa from "@/assets/Arisa.png.asset.json";
 import khaja from "@/assets/Khaja_Masala.png.asset.json";
 import chuda from "@/assets/Chuda_Mixture.png.asset.json";
 import badi from "@/assets/Fried_Badi.png.asset.json";
-import moa from "@/assets/Moa_Bites.png.asset.json";
+import nimki from "@/assets/Nimki.png.asset.json";
 
 export const Route = createFileRoute("/stories")({
   head: () => ({
@@ -27,9 +26,9 @@ const stories = [
     tag: "Heritage",
   },
   {
-    image: arisa.url,
-    title: "Why Arisa is Odisha's Traditional Sweet",
-    summary: "From Manabasa Gurubar to Raja Parba — the humble pitha that begins every Odia celebration.",
+    image: nimki.url,
+    title: "Nimki: The Odia Tea-Time Ritual",
+    summary: "Diamond-cut, cumin-spiced and fried to a golden crisp — the cracker that completes every evening cup of tea.",
     tag: "Tradition",
   },
   {
@@ -37,12 +36,6 @@ const stories = [
     title: "The Heritage of Chuda Mixture",
     summary: "How a simple bowl of flattened rice became Odisha's most beloved everyday snack.",
     tag: "Everyday",
-  },
-  {
-    image: moa.url,
-    title: "Festivals & The Foods That Belong to Them",
-    summary: "Every Odia festival has its own sweet. Here's the calendar, told through food.",
-    tag: "Festivals",
   },
   {
     image: badi.url,
