@@ -36,7 +36,7 @@ const journey = [
 ];
 
 const testimonials = [
-  { name: "Priya M.", city: "Bengaluru", text: "The Arisa took me straight back to my grandmother's kitchen in Cuttack. Genuinely the real thing." },
+  { name: "Priya M.", city: "Bengaluru", text: "The Nimki took me straight back to my grandmother's kitchen in Cuttack. Genuinely the real thing." },
   { name: "Ankit S.", city: "Mumbai", text: "The Khaja Masala Crunch is dangerously addictive. Nothing else in the market comes close." },
   { name: "Ritika D.", city: "Delhi", text: "Beautiful packaging, honest ingredients, and every bite feels made with care. My family is hooked." },
 ];
