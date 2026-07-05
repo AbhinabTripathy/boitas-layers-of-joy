@@ -1,9 +1,7 @@
-import arisa from "@/assets/Arisa.png.asset.json";
 import chuda from "@/assets/Chuda_Mixture.png.asset.json";
 import badi from "@/assets/Fried_Badi.png.asset.json";
 import khajaMasala from "@/assets/Khaja_Masala.png.asset.json";
 import nimki from "@/assets/Nimki.png.asset.json";
-import moa from "@/assets/Moa_Bites.png.asset.json";
 
 export type WeightOption = { label: string; price: number };
 
