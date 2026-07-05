@@ -1,9 +1,7 @@
-import arisa from "@/assets/Arisa.png.asset.json";
 import chuda from "@/assets/Chuda_Mixture.png.asset.json";
 import badi from "@/assets/Fried_Badi.png.asset.json";
 import khajaMasala from "@/assets/Khaja_Masala.png.asset.json";
 import nimki from "@/assets/Nimki.png.asset.json";
-import moa from "@/assets/Moa_Bites.png.asset.json";
 
 export type WeightOption = { label: string; price: number };
 
@@ -23,44 +21,6 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  {
-    slug: "arisa",
-    name: "Arisa",
-    tagline: "Just the way you remember",
-    category: "Sweets",
-    image: arisa.url,
-    shortDescription: "Traditional rice-flour and jaggery pitha, deep-fried to golden perfection.",
-    description:
-      "Arisa Pitha is one of Odisha's most cherished temple offerings — soft on the inside, crisp on the outside, sweetened with pure jaggery and finished with a sprinkle of sesame.",
-    ingredients: "Rice flour, jaggery, sesame seeds, refined oil.",
-    shelfLife: "15 days from date of packaging.",
-    storage: "Store in a cool, dry place. Refrigerate after opening for best freshness.",
-    story:
-      "Arisa is inseparable from Odia festivals — Raja, Manabasa Gurubar and the offerings of Jagannath temple all begin with this humble jaggery pitha, made by grandmothers with unhurried hands.",
-    weights: [
-      { label: "250g", price: 220 },
-      { label: "500g", price: 400 },
-    ],
-  },
-  {
-    slug: "moa-bites",
-    name: "Moa Bites",
-    tagline: "Little parcels of joy",
-    category: "Sweets",
-    image: moa.url,
-    shortDescription: "Puffed rice and jaggery bound into bite-sized bursts of nostalgia.",
-    description:
-      "Inspired by the beloved Joynagar tradition and reimagined for modern snacking, our Moa Bites are light, crunchy and glazed in slow-cooked jaggery.",
-    ingredients: "Puffed rice, jaggery, ghee, cardamom.",
-    shelfLife: "30 days from date of packaging.",
-    storage: "Keep in an airtight container away from moisture.",
-    story:
-      "In eastern India, moa is the sweet that arrives with winter — jars of it passed down between neighbours. We shrunk them into bites so joy travels easier.",
-    weights: [
-      { label: "200g", price: 240 },
-      { label: "400g", price: 440 },
-    ],
-  },
   {
     slug: "khaja-masala",
     name: "Khaja Masala Crunch",
