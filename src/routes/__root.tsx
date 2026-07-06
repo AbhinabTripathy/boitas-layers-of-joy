@@ -63,14 +63,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Boitas — Taste of Odisha. Crafted with Tradition." },
+      { title: "Boitas — Authentic Odia Delicacies, Crafted with Tradition" },
       {
         name: "description",
         content:
           "Boitas brings authentic, handcrafted Odia sweets and savouries — Khaja, Arisa, Chuda Mixture and more — to homes across India. Layers of joy in every bite.",
       },
       { name: "author", content: "Boitas" },
-      { property: "og:title", content: "Boitas — Taste of Odisha" },
+      { property: "og:title", content: "Boitas — Authentic Odia Delicacies, Crafted with Tradition" },
       {
         property: "og:description",
         content: "Handcrafted Odia delicacies. Layers of joy in every bite.",
@@ -79,6 +79,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Boitas" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#7A1F1F" },
+      { name: "twitter:title", content: "Boitas — Authentic Odia Delicacies, Crafted with Tradition" },
+      { name: "description", content: "Boitas brings authentic, handcrafted Odia sweets and savouries — Khaja, Arisa, Chuda Mixture and more — to homes across India. Layers of joy in every bite." },
+      { property: "og:description", content: "Boitas brings authentic, handcrafted Odia sweets and savouries — Khaja, Arisa, Chuda Mixture and more — to homes across India. Layers of joy in every bite." },
+      { name: "twitter:description", content: "Boitas brings authentic, handcrafted Odia sweets and savouries — Khaja, Arisa, Chuda Mixture and more — to homes across India. Layers of joy in every bite." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b536fb2f-12ff-46fc-98af-082106c98acb/id-preview-0f177dfc--02a62b7a-b76f-422f-bdc4-1cd77b35010b.lovable.app-1783221477771.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b536fb2f-12ff-46fc-98af-082106c98acb/id-preview-0f177dfc--02a62b7a-b76f-422f-bdc4-1cd77b35010b.lovable.app-1783221477771.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
