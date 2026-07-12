@@ -129,9 +129,11 @@ function ProductDetail() {
                     <button onClick={handleAdd} className="btn-outline">
                       <ShoppingBag className="w-4 h-4" /> Add to Basket
                     </button>
-                <button onClick={handleBuyNow} className="btn-primary">
-                  Order on WhatsApp
-                </button>
+                    <button onClick={handleBuyNow} className="btn-primary">
+                      Order on WhatsApp
+                    </button>
+                  </>
+                )}
               </div>
 
               <div className="mt-10 grid grid-cols-1 gap-4 border-t border-border pt-8">
