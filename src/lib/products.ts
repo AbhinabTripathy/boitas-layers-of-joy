@@ -1,7 +1,9 @@
 import chuda from "@/assets/Chuda_Mixture.png.asset.json";
 import badi from "@/assets/Fried_Badi.png.asset.json";
 import khajaMasala from "@/assets/Khaja_Masala.png.asset.json";
-import nimki from "@/assets/Nimki.png.asset.json";
+import nimki from "@/assets/Nimki.jpg.asset.json";
+import moa from "@/assets/Moa_Bites.jpg.asset.json";
+import arisa from "@/assets/Arisa.jpg.asset.json";
 
 export type WeightOption = { label: string; price: number };
 
@@ -18,6 +20,7 @@ export type Product = {
   storage: string;
   story: string;
   weights: WeightOption[];
+  comingSoon?: boolean;
 };
 
 export const products: Product[] = [
@@ -96,6 +99,40 @@ export const products: Product[] = [
       { label: "200g", price: 190 },
       { label: "400g", price: 360 },
     ],
+  },
+  {
+    slug: "moa-bites",
+    name: "Moa Bites",
+    tagline: "Puffed rice, bound in jaggery",
+    category: "Sweets",
+    image: moa.url,
+    shortDescription: "Light, airy puffed-rice bites with a caramel-jaggery finish.",
+    description:
+      "Moa is a cherished traditional sweet made from puffed rice bound with rich jaggery — light, airy and softly caramel-sweet. Crafted to retain its original essence while delivering a premium snacking experience.",
+    ingredients: "Puffed rice, jaggery, cardamom.",
+    shelfLife: "60 days from date of packaging.",
+    storage: "Store in an airtight container in a cool, dry place.",
+    story:
+      "A festival staple in Odia homes, moa carries the warmth of jaggery cooked slow, the crackle of freshly puffed rice and hands that shape each bite with care.",
+    weights: [{ label: "100g", price: 180 }],
+    comingSoon: true,
+  },
+  {
+    slug: "arisa",
+    name: "Arisa Pitha",
+    tagline: "Just the way you remember",
+    category: "Sweets",
+    image: arisa.url,
+    shortDescription: "Jaggery-sweetened rice-flour pitha, kissed with sesame.",
+    description:
+      "Arisa is a celebration of authentic traditional taste — rice flour and jaggery pressed together, crowned with sesame and fried till a deep amber. A pitha that carries the memory of every Odia festival.",
+    ingredients: "Rice flour, jaggery, sesame seeds, refined oil.",
+    shelfLife: "45 days from date of packaging.",
+    storage: "Store in an airtight container in a cool, dry place.",
+    story:
+      "No Odia festival is complete without arisa. We honour the recipe passed down through generations — slow-cooked jaggery, hand-pressed dough, sesame-crowned.",
+    weights: [{ label: "100g", price: 200 }],
+    comingSoon: true,
   },
 ];
 
