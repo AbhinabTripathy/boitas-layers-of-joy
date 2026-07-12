@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import khaja from "@/assets/Khaja_Masala.png.asset.json";
 import chuda from "@/assets/Chuda_Mixture.png.asset.json";
 import badi from "@/assets/Fried_Badi.png.asset.json";
-import nimki from "@/assets/Nimki.png.asset.json";
+import nimki from "@/assets/Nimki.jpg.asset.json";
 
 export const Route = createFileRoute("/stories")({
   head: () => ({

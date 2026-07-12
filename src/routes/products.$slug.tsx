@@ -74,48 +74,66 @@ function ProductDetail() {
               <h1 className="font-serif text-5xl md:text-6xl text-primary mt-2">{product.name}</h1>
               <p className="font-serif italic text-lg text-muted-foreground mt-2">{product.tagline}</p>
 
-              <div className="mt-6 flex items-baseline gap-3">
-                <span className="font-serif text-4xl text-primary">₹{weight.price * qty}</span>
-                <span className="text-sm text-muted-foreground">incl. all taxes</span>
-              </div>
+              {product.comingSoon ? (
+                <div className="mt-6 inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs uppercase tracking-widest font-medium">
+                  Coming Soon
+                </div>
+              ) : (
+                <div className="mt-6 flex items-baseline gap-3">
+                  <span className="font-serif text-4xl text-primary">₹{weight.price * qty}</span>
+                  <span className="text-sm text-muted-foreground">incl. all taxes</span>
+                </div>
+              )}
 
               <p className="mt-6 text-muted-foreground leading-relaxed">{product.description}</p>
 
-              <div className="mt-8">
-                <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Weight</p>
-                <div className="flex gap-2 flex-wrap">
-                  {product.weights.map((w: { label: string; price: number }, i: number) => (
-                    <button
-                      key={w.label}
-                      onClick={() => setWeightIdx(i)}
-                      className={`px-4 py-2 rounded-full border text-sm font-medium transition ${
-                        i === weightIdx
-                          ? "bg-primary text-primary-foreground border-primary"
-                          : "border-border hover:border-primary"
-                      }`}
-                    >
-                      {w.label} · ₹{w.price}
-                    </button>
-                  ))}
-                </div>
-              </div>
+              {!product.comingSoon && (
+                <>
+                  <div className="mt-8">
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Weight</p>
+                    <div className="flex gap-2 flex-wrap">
+                      {product.weights.map((w: { label: string; price: number }, i: number) => (
+                        <button
+                          key={w.label}
+                          onClick={() => setWeightIdx(i)}
+                          className={`px-4 py-2 rounded-full border text-sm font-medium transition ${
+                            i === weightIdx
+                              ? "bg-primary text-primary-foreground border-primary"
+                              : "border-border hover:border-primary"
+                          }`}
+                        >
+                          {w.label} · ₹{w.price}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
 
-              <div className="mt-6 flex items-center gap-4">
-                <p className="text-xs uppercase tracking-widest text-muted-foreground">Quantity</p>
-                <div className="flex items-center gap-3 border border-border rounded-full px-3 py-2">
-                  <button onClick={() => setQty(Math.max(1, qty - 1))} aria-label="Decrease"><Minus className="w-4 h-4" /></button>
-                  <span className="w-6 text-center font-medium">{qty}</span>
-                  <button onClick={() => setQty(qty + 1)} aria-label="Increase"><Plus className="w-4 h-4" /></button>
-                </div>
-              </div>
+                  <div className="mt-6 flex items-center gap-4">
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground">Quantity</p>
+                    <div className="flex items-center gap-3 border border-border rounded-full px-3 py-2">
+                      <button onClick={() => setQty(Math.max(1, qty - 1))} aria-label="Decrease"><Minus className="w-4 h-4" /></button>
+                      <span className="w-6 text-center font-medium">{qty}</span>
+                      <button onClick={() => setQty(qty + 1)} aria-label="Increase"><Plus className="w-4 h-4" /></button>
+                    </div>
+                  </div>
+                </>
+              )}
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <button onClick={handleAdd} className="btn-outline">
-                  <ShoppingBag className="w-4 h-4" /> Add to Basket
-                </button>
-                <button onClick={handleBuyNow} className="btn-primary">
-                  Order on WhatsApp
-                </button>
+                {product.comingSoon ? (
+                  <button disabled className="btn-outline opacity-60 cursor-not-allowed">
+                    Notify Me When Available
+                  </button>
+                ) : (
+                  <>
+                    <button onClick={handleAdd} className="btn-outline">
+                      <ShoppingBag className="w-4 h-4" /> Add to Basket
+                    </button>
+                    <button onClick={handleBuyNow} className="btn-primary">
+                      Order on WhatsApp
+                    </button>
+                  </>
+                )}
               </div>
 
               <div className="mt-10 grid grid-cols-1 gap-4 border-t border-border pt-8">
