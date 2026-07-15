@@ -39,8 +39,8 @@ export const products: Product[] = [
     story:
       "The khaja belongs to the sacred kitchens of Puri. We keep the craft — thirty-two layers, no shortcuts — and give it a modern, snackable twist.",
     weights: [
-      { label: "150g", price: 180 },
-      { label: "300g", price: 340 },
+      { label: "150g", price: 45 },
+      { label: "300g", price: 85 },
     ],
   },
   {
@@ -58,8 +58,8 @@ export const products: Product[] = [
     story:
       "In every Odia household, the evening tea is incomplete without a bowl of nimki. Mothers would roll and cut diamond shapes by hand while the oil warmed on the stove — a ritual we preserve in every batch.",
     weights: [
-      { label: "150g", price: 160 },
-      { label: "300g", price: 300 },
+      { label: "150g", price: 30 },
+      { label: "300g", price: 55 },
     ],
   },
   {
@@ -77,8 +77,8 @@ export const products: Product[] = [
     story:
       "In Odia homes, chuda is breakfast, tea-time and midnight snack. Ours captures that quiet daily ritual in every handful.",
     weights: [
-      { label: "200g", price: 160 },
-      { label: "400g", price: 300 },
+      { label: "150g", price: 25 },
+      { label: "300g", price: 45 },
     ],
   },
   {
@@ -96,8 +96,8 @@ export const products: Product[] = [
     story:
       "Every Odia terrace tells the same summer story — women shaping badi on cotton cloths, drying it under an unforgiving sun. We honour that ritual, one crunchy bite at a time.",
     weights: [
-      { label: "200g", price: 190 },
-      { label: "400g", price: 360 },
+      { label: "150g", price: 55 },
+      { label: "300g", price: 100 },
     ],
   },
   {

@@ -32,7 +32,7 @@ export function SiteFooter() {
           <h4 className="text-sm uppercase tracking-widest text-accent mb-4">Reach us</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2"><Phone className="w-4 h-4" /> +91 97787 08100</li>
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> hello@boitas.in</li>
+            <li className="flex items-center gap-2"><Mail className="w-4 h-4" /> taste@theboitas.com</li>
           </ul>
           <div className="flex gap-3 mt-5">
             <a href={WA_URL} target="_blank" rel="noreferrer" aria-label="WhatsApp"
@@ -46,7 +46,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-primary-foreground/15">
         <div className="container-x py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-primary-foreground/60">
-          <p>© {new Date().getFullYear()} Boitas. All rights reserved.</p>
+          <p>© {new Date().getFullYear()}&nbsp;The Boitas Prop. All rights reserved.</p>
           <p>Taste of Odisha. Crafted with Tradition.</p>
         </div>
       </div>
